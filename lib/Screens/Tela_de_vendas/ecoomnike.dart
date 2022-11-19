@@ -22,26 +22,28 @@ class _ecommnikeState extends State<ecommnike> {
             color: Color.fromARGB(255, 13, 139, 223),
             child: Column(
               children: [
-                Padding(
-                  padding: const EdgeInsets.only(top: 32),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: const [
-                      Text(
-                        'Rua Santo Antônio, 123',
-                        style: TextStyle(
-                            color: Color.fromARGB(255, 255, 255, 255),
-                            fontSize: 14,
-                            fontFamily: 'Roboto',
-                            fontWeight: FontWeight.w400,
-                            height: 1.5),
-                      ),
-                      Icon(
-                        Icons.expand_more,
-                        color: Colors.white,
-                        size: 26,
-                      ),
-                    ],
+                Container(
+                  height: 100,
+                  width: double.maxFinite,
+                  decoration: const BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.only(
+                      bottomLeft: Radius.circular(20),
+                      bottomRight: Radius.circular(20),
+                    ),
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.only(top: 20),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: const [
+                        Image(
+                          image: AssetImage('img/bennysejerry.png'),
+                          height: 50,
+                          width: 50,
+                        ),
+                      ],
+                    ),
                   ),
                 ),
                 SizedBox(
